@@ -1,3 +1,383 @@
-h1 {
-    color: salmon;
+
+body {
+    padding: 24px;
+    font-family: 'Hind Vadodara', sans-serif;
+    p{
+        font-size: 0.8rem;
+    }
+     @media (max-width: 768px) {
+            padding: 0px 16px 16px 16px;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+        }
 }
+
+
+header {
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    .logo-container {
+        display: flex;
+        align-items: center;
+        .svg-logo{
+            background-size: cover ;
+        }
+        #colmar {
+            color: #4a4a4a;
+            font-weight: 600;
+        }
+        #academy {
+            color: #4a4a4a;
+            font-weight: 200;
+        }
+    }
+    .icons {
+        display: none;
+    }
+    
+    
+
+    @media (max-width: 768px) {
+        height: 64px;
+        .logo-container, nav {
+            display: none;
+        }
+        .icons {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            ;
+            svg {
+                background-size: cover;
+            }
+        }
+    }
+    
+    }
+
+nav {
+    display: flex;
+    align-items: center;
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        font-size: 1rem;
+        padding-right: 24px;
+        
+        li {
+            a {
+                display: inline-block;
+                padding: 16px;
+                color: #4c4c4c;
+                           
+
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    background-color:#d8d8d8 ;
+    .banner {
+        width: 60%;
+        padding: 32px 24px 32px 0px;
+        float: left;
+    }
+    .one-text {
+        width: 30%;
+    }
+   h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4a4a4a;
+   }
+   p {
+    font-size: 1.5rem;
+    font-weight: bold;
+   color:  #4a4a4a
+   }
+   .start-btn {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 8px ;
+    width: 90%;
+    height: 50px;
+    background-color: #4a4a4a ;
+    color: antiquewhite;
+   }
+   
+   @media (max-width: 768px) {
+    display: block;
+    align-items: center;
+    
+    .banner {
+        width: 100%;
+        padding: 0px;
+          
+    }
+    .one-text {
+        width: 100%;
+        padding: 32px 16px 32px 16px
+    }
+    
+    p {
+        width: 80%;
+    }
+    .start-btn {
+        background-color: #9b9b9b;
+        border: none;
+    }
+   }
+}
+
+.information {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    .img-two {
+        display: block;
+        width: 60%;
+        padding-right: 24px;
+        
+        img {
+            width: 100%;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #4a4a4a;
+            margin: 32px 0px 24px 0px;
+        }
+        .img-two-ref {
+            padding-top: 32px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            
+        }
+        
+    
+    }
+    .cards-two-container {
+        display: block;
+        width: 40%;
+        .third {
+            background-color: #d8d8d8 ;
+        }
+        .card-two {
+            display: flex;
+            padding-bottom: 16px;
+            
+            h2 { font-size: 1.5rem;  
+                letter-spacing: 0.4px;  
+                margin: 0;
+
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: 0.6px
+            }
+            img {
+                height: auto;
+                width: 35%;
+                float: left;
+            }
+            .img-describe {
+                display: fl;
+                width: 65%;
+                padding-left: 16px;
+                float: right;
+            }
+            .readmore {
+                color: #5a99e4 ;
+                font-weight: 700;
+                letter-spacing: 0.4px
+            }
+            .img-mobile {
+                display: none;
+            }
+            
+        }
+        
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+            align-items: center;
+            padding-top: 16px;
+            .img-two {
+                display: none;
+            }
+            
+            .cards-two-container{
+                width: 100%;
+                display: block; 
+                padding-bottom: 32px;
+                .card-two {
+                    width: 100%;
+                    display: block;
+                    .img-mobile {
+                        display: block;
+                        width: 100%;
+                    }
+                    .img-desktop {
+                        display: none;
+                    }
+
+                }
+                .third {
+                    background-color: white ;
+                }
+            }
+        } 
+
+    }
+
+.course {
+    display: inline-block
+    
+    background-color: #eaebec ;
+    h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #4a4a4a;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 45% 45%;
+        gap: 32px;
+        
+        .card-three {
+            display: block;
+            background-color: white;
+            padding-bottom: 24px;
+            img {
+                height: auto;
+                width: 100%;
+            }
+            div {
+                padding: 0px 0px 24px 16px;
+                h2 {
+                    margin: 0;
+                }
+                p {
+                    margin: 0;
+                }
+                
+                
+            }
+        }
+    }
+
+  
+
+}
+
+
+
+
+.thesis { display: block;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-bottom-color: #d8d8d8 ;
+    h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #4a4a4a;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .four-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 32px;
+        .left-four {
+            width: 60%;
+            float: left;
+            padding-right: 24px;
+            video {
+                width: 100%;
+            }
+            p { width: 90%;
+                margin-top: 8px 
+            }
+        }
+        .right-four {
+            width: 40%;
+            display: block;
+            
+            .card-four {
+                display: flex;
+                padding-bottom: 16px;
+                padding-top: 16px;
+                align-items: center;
+                img {
+                    height: auto;
+                    width: 35%;
+                    float: left;
+                    padding-left: 16px;
+                }
+                .card-four-text {
+                    display: block;
+                width: 65%;
+                padding-left: 16px;  
+                }
+
+                
+
+                
+               
+            }
+            .top-right-four {
+                background-color: #d8d8d8;
+            }
+           
+           
+            
+        }
+    }
+
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        a {
+            text-decoration: none;
+            padding: 0px 10px 0px 10px;
+            &:hover {
+                background-color: rgb(181, 181, 181);
+                border-radius: 20%;
+            }
+        }
+    }
+}
+
+
+
+/* เหลือ section ที่ 2-4 ต้องมาทำให้เสร็จ ให้ดูแบบละเอียดนะ 
+ใจเย็น ๆ เปิดหน้าต่าง live preview ไว้ข้าง ๆ กับ  vs code และ
+เอา goal image display ใน ipad นะ 
+
+สู้ ๆ  */
+
