@@ -220,6 +220,7 @@ nav {
             .cards-two-container{
                 width: 100%;
                 display: block;
+                color: #4a4a4a;
                 .card-two {
                     width: 100%;
                     display: block;
@@ -241,8 +242,6 @@ nav {
 
     }
 
-
-
 .course {
     display: inline-block
     
@@ -255,10 +254,14 @@ nav {
         padding-bottom: 32px;
     }
     .card-container {
+        padding: 0px 72px;
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: 45% 45%;
         gap: 32px;
+        color: #4a4a4a;
+
+
         
         .card-three {
             display: block;
@@ -288,15 +291,12 @@ nav {
             padding: 32px 0px 16px 0px;
         }
         .card-container {
+            padding: 0;
             display: block ;
             align-items: center;
             padding-bottom: 0px;
             background-color: white ;
-                
-
-            
-            
-            
+ 
             .card-three {
                 display: block;
                 padding-bottom: 0px;
@@ -333,7 +333,8 @@ nav {
 
 }
 
-.thesis { display: block;
+.thesis {
+    display: block;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid;
@@ -363,10 +364,9 @@ nav {
                 margin-top: 8px 
             }
         }
-        .right-four {
+        .rightfour {
             width: 40%;
             display: block;
-            
             .card-four {
                 display: flex;
                 padding-bottom: 16px;
@@ -402,9 +402,7 @@ nav {
         
         .vid-mobile {
             display: block;
-            
-            width: 130%;
-            
+            width: 100%;
             margin-left: -16px;
             margin-right: -16px;
             
@@ -412,13 +410,12 @@ nav {
         
         .four-container {
             display: none;
-            /* .rightfour, .card-four-text {
-                display: none;
-            } */
         }
+}
 }
 
 
+    
 
 
 
@@ -434,6 +431,19 @@ footer {
                 background-color: rgb(181, 181, 181);
                 border-radius: 20%;
             }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 24px;
+        
+        p {
+            padding: 16px 0px 16px 0px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        a {
+            display: none;
         }
     }
 }
