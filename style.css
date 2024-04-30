@@ -1,7 +1,7 @@
 
 body {
     padding: 24px 0px 24px auto;
-    font-family: 'Hind Vadodara', sans-serif;
+    font-family: "Poppins", sans-serif;
     p{
         font-size: 0.8rem;
     }
@@ -15,8 +15,6 @@ body {
 
 
 header {
-    
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,8 +38,6 @@ header {
         display: none;
     }
     
-    
-
     @media (max-width: 480px) {
         height: 64px;
         .logo-container, nav {
@@ -97,13 +93,13 @@ nav {
         width: 30%;
     }
    h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #4a4a4a;
    }
    p {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 400;
    color:  #4a4a4a
    }
    .start-btn {
@@ -164,7 +160,7 @@ nav {
             font-size: 0.8rem;
             font-weight: bold;
         }
-        .img-des
+        
     
     }
     .cards-two-container {
